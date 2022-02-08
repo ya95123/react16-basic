@@ -1,6 +1,7 @@
-### 全域安裝 creat-react-app
+### 創建 React App 專案
 
 ```
+// 全域安裝 creat-react-app
 $ npm i -g create-react-app
 // 創建專案
 $ create-react-app 專案名稱
