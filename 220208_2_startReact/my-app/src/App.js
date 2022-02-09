@@ -25,9 +25,27 @@ import { Component } from 'react/cjs/react.production.min';
 
 // *可執行寫法 
 class App extends Component {
+  // *屬於類別的靜態屬性 -> static property (方法1)
+  // static propTypes = {
+  // }
+  // static getDerivedStateFromProps(nextProps, prevState) {
+  // }
+  // bioname
+  // age = 0
+
+  // *生命週期函式
+  // constructor() {
+  // }
+  // componentDiDMount() {
+  // }
+  // componentDidUpdate(){
+  // }
+
+  // *物件
   state = {
     count: 1,
   }
+  // *自訂函式
   addCount = () => {
     this.setState({
       count: this.state.count + 1
@@ -48,5 +66,9 @@ class App extends Component {
     )
   }
 }
+
+// *定義該 class 的靜態屬性(方法2)
+// App.prototype={
+// }
 
 export default App;
