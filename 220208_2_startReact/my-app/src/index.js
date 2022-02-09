@@ -13,7 +13,7 @@ ReactDOM.render(
 
 // *簡易寫法
 // ReactDOM.render(
-//   <App/>,
+//   <App />,
 //   document.getElementById("root")
 // )
 
