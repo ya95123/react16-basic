@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-// *props 基本寫法
+// *state 基本寫法
 // class Counter extends Component {
 //   state = {
 //     count: 0,
