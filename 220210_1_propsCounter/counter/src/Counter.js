@@ -50,9 +50,23 @@ class Counter extends Component {
   }
 
   addCount = () => {
+    // !setState 是非同步的設定 -> 可以透過 callback / function 寫法等候跑完執行新任務
     this.setState({
       count: this.state.count + 1
-    })
+    },
+      // !setState 可回傳 callback function
+      () => {
+        this.sendCount()
+      }
+    )
+    // !setState function return 簡寫寫法 () 包起來 代表裡面是東西不是函式
+    // this.setState(state => ({
+    //   count: state.count + 1
+    // }))
+  }
+
+  sendCount = () => {
+    console.log(this.state.count)
   }
 
   render() {
