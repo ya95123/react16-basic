@@ -1,0 +1,20 @@
+.nameList {
+  margin: 0 2rem;
+}
+
+.topic{
+ cursor: pointer;
+}
+
+.topic:before{
+  content: "🗀";
+  margin: 0 6px 0 0;
+}
+
+.open{
+  color: seagreen;
+}
+
+.open:before{
+  content: "🗁";
+}
